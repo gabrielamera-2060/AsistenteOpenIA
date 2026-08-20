@@ -25,8 +25,7 @@ namespace AsistenteOpenAI.Services
                 throw new ArgumentException("El nombre del modelo no puede estar vacío.", nameof(modelo));
             }
 
-            this.cliente = new ResponsesClient("LLAVE SECRETA");
-            this.modelo = modelo;
+            this.cliente = new ResponsesClient("LLAVE SECRETA"); this.modelo = modelo;
         }
 
         public async Task<RespuestaIA> PreguntarAsync(PreguntaIA pregunta)
