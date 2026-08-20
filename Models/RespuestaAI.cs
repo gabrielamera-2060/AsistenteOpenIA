@@ -8,6 +8,7 @@ namespace AsistenteOpenAI.Models
 {
     public class RespuestaIA
     {
+        public int Id { get; set; }
 
         public string Texto { get; set; }
         public string ModeloUtilizado { get; set; }
@@ -19,8 +20,5 @@ namespace AsistenteOpenAI.Models
             ModeloUtilizado = modeloUtilizado;
             Fecha = DateTime.Now;
         }
-
-
-
     }
 }
